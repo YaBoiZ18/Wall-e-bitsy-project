@@ -98,6 +98,28 @@ NAME Level 3
 PAL 1
 TUNE 3
 
+ROOM 3
+0,0,a,a,a,a,a,a,a,a,a,a,a,a,a,0
+0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+0,a,a,a,a,0,0,0,0,0,0,0,0,a,a,a
+0,a,a,a,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,a,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,d,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,d,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,a,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,a,0,0,0,0,0,0,0,0,0,0,0,a,a
+0,a,a,a,0,0,0,0,0,0,0,0,0,a,a,a
+0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+0,0,a,a,a,a,a,a,a,a,a,a,a,a,a,0
+NAME Beginning Room
+EXT 2,7 1 13,14 FX fade_b DLG f
+PAL 0
+TUNE 1
+
 TIL a
 11111111
 11010101
@@ -131,6 +153,19 @@ TIL c
 10110111
 10000101
 11111111
+NAME Block3
+WAL true
+
+TIL d
+11111111
+11111111
+11000011
+11011011
+11011011
+11000011
+11111111
+11111111
+NAME Doors
 WAL true
 
 SPR A
@@ -151,7 +186,7 @@ SPR A
 00111100
 11111111
 11000011
-POS 1 14,14
+POS 3 13,8
 
 SPR a
 00000000
@@ -212,6 +247,28 @@ SPR d
 11111111
 NAME Fridge
 POS 0 1,1
+
+SPR e
+00000000
+10001000
+01010000
+00100000
+00100000
+00111110
+00111110
+01001001
+>
+10000100
+10001000
+01010000
+00100000
+00100001
+00111110
+00111110
+00000000
+NAME Hal
+DLG e
+POS 3 6,8
 
 ITM 0
 00000000
@@ -373,6 +430,19 @@ NAME Paddle Ball dialog
 DLG d
 
 NAME exit narration 2
+
+DLG e
+"""
+{sequence
+  - Hal sits and waits for your return.
+  - He wishes you good luck...
+}
+"""
+NAME Roach dialog
+
+DLG f
+You start your journey to the wasteland...
+NAME exit narration 3
 
 VAR CollItems
 1
